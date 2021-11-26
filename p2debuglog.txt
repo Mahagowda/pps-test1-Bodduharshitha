@@ -1,0 +1,25 @@
+clang version 7.0.0-3~ubuntu0.18.04.1 (tags/RELEASE_700/final)
+
+(gdb) b main
+Breakpoint 1 at 0x736: file p2original.c, line 7.
+(gdb) r
+Starting program: /home/runner/pps-test1-Bodduharshitha-4/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p2original.c:7
+7   {
+(gdb) n
+9       printf("Enter the two number: ");
+(gdb) n
+10      scanf("%d %d", &num1, &num2);
+(gdb) n
+Enter the two number: 3 4
+11      result = add(num1, num2);
+(gdb) n
+12      printf("Addition of %d and %d is %d", num1, num2, result);
+(gdb) n
+13      return 0;
+(gdb) c
+Continuing.
+Addition of 3 and 4 is 7[Inferior 1 (process 676) exited normally]
+(gdb) 
