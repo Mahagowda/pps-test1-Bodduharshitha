@@ -1,23 +1,23 @@
 (gdb) b main
-Breakpoint 1 at 0x744: file p3original.c, line 9.
+Breakpoint 1 at 0x7b1: file p3original.c, line 19.
 (gdb) r
-Starting program: /home/runner/pps-test1-Bodduharshitha-4/a.out 
+Starting program: /home/runner/pps-test1-BalajiVirat114-3/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
-Breakpoint 1, main () at p3original.c:9
-9   {
+Breakpoint 1, main () at p3original.c:19
+19  {
 (gdb) n
-11      printf("Enter the two number: ");
+21    input(&a,&b);
 (gdb) n
-12      scanf("%d %d", &num1, &num2);
+Enter two number 2 3
+22    add(a,b,&sum);
 (gdb) n
-Enter the two number: 3 4
-13      result = add(&num1, &num2);
+23    output(a,b,sum);
 (gdb) n
-14      printf("Addition of %d and %d is %d", num1, num2, result);
-(gdb) n
-15      return 0;
-(gdb) c
+sum of 2 + 3 is 5
+24    return 0;
+(gdb) s
+25  }(gdb) c
 Continuing.
-Addition of 3 and 4 is 7[Inferior 1 (process 459) exited normally]
-(gdb)
+[Inferior 1 (process 239) exited normally]
+(gdb) 
