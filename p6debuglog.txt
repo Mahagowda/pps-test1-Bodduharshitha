@@ -1,0 +1,38 @@
+(gdb) 
+(gdb) b main
+Breakpoint 1 at 0x722: file p6original.c, line 2.
+(gdb) r
+Starting program: /home/runner/pps-test1-Bodduharshitha-4/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p6original.c:2
+2   int main() {
+(gdb) n
+3       int n, i, sum = 0;
+(gdb) n
+5       printf("Enter a positive integer: ");
+(gdb) n
+6       scanf("%d", &n);
+(gdb) n
+Enter a positive integer: 3
+8       for (i = 1; i <= n; ++i) {
+(gdb) n
+9           sum += i;
+(gdb) n
+8       for (i = 1; i <= n; ++i) {
+(gdb) n
+9           sum += i;
+(gdb) n
+8       for (i = 1; i <= n; ++i) {
+(gdb) n
+9           sum += i;
+(gdb) n
+8       for (i = 1; i <= n; ++i) {
+(gdb) n
+12      printf("Sum = %d", sum);
+(gdb) n
+13      return 0;
+(gdb) c
+Continuing.
+Sum = 6[Inferior 1 (process 346) exited normally]
+(gdb) 
