@@ -25,3 +25,43 @@ Continuing.
 [Inferior 1 (process 133) exited normally]
 (gdb) 
 
+
+
+
+
+
+
+
+
+
+
+
+
+(gdb) b main
+Breakpoint 1 at 0x814: file p5final.c, line 24.
+(gdb) r
+Starting program: /home/runner/pps-test1-Bodduharshitha-4/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5final.c:24
+24  {
+(gdb) n
+26    x= input();
+(gdb) n
+Enter the number:1
+27    y= input();
+(gdb) n
+Enter the number:2
+28    z= input();
+(gdb) n
+Enter the number:3
+29    l= cmp(&x,&y,&z);
+(gdb) n
+30    output(l);
+(gdb) n
+Largest number is : 3
+31    return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 283) exited normally]
+(gdb) 
