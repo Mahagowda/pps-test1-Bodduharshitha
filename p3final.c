@@ -3,7 +3,6 @@ void input(int*a,int*b)
 {
   printf("Enter two number");
   scanf("%d %d",a,b);
-
 }
 void add(int a,int b,int*sum)
 {
@@ -12,7 +11,6 @@ void add(int a,int b,int*sum)
 void output(int a,int b,int sum)
 {
   printf("sum of %d + %d is %d\n",a,b,sum);
-  
 }
 int main()
 {
