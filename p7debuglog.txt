@@ -1,0 +1,65 @@
+(gdb) b main
+Breakpoint 1 at 0x775: file p7original.c, line 4.
+(gdb) r
+Starting program: /home/runner/pps-test1-Bodduharshitha-4/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p7original.c:4
+warning: Source file is more recent than executable.
+4       int size, i, sum=0;
+(gdb) n
+5       printf("Enter array size:");
+(gdb) n
+6       scanf("%d",&size);
+(gdb) n
+Enter array size
+7       int a[size];
+(gdb) 3
+Undefined command: "3".  Try "help".
+(gdb) n
+3
+8       printf("Enter array elements:");
+(gdb) n
+Enter array elements
+9       for(i = 0; i < size; i++)
+(gdb) 
+10            scanf("%d",&a[i]);
+(gdb) 5
+Undefined command: "5".  Try "help".
+(gdb) n
+5
+9       for(i = 0; i < size; i++)
+(gdb) 
+10            scanf("%d",&a[i]);
+(gdb) 
+5
+9       for(i = 0; i < size; i++)
+(gdb) 
+10            scanf("%d",&a[i]);
+(gdb) 6
+Undefined command: "6".  Try "help".
+(gdb) 
+Undefined command: "6".  Try "help".
+(gdb) n
+6
+9       for(i = 0; i < size; i++)
+(gdb) n
+11      for(i = 0; i < size; i++)
+(gdb) n
+12            sum = sum + a[i];
+(gdb) n
+11      for(i = 0; i < size; i++)
+(gdb) n
+12            sum = sum + a[i];
+(gdb) n
+11      for(i = 0; i < size; i++)
+(gdb) 
+12            sum = sum + a[i];
+(gdb) n
+11      for(i = 0; i < size; i++)
+(gdb) n
+13      printf("Sum of the array = %d\n",sum);
+(gdb) n
+Sum of the array = 16
+14       return 0;
+(gdb) 
