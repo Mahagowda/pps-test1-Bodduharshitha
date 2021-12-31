@@ -1,1 +1,39 @@
- 
+  gcc -g p9original.c
+p9original.c: In function ‘main’:
+p9original.c:8:5: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]
+     gets(a);
+     ^~~~
+     fgets
+/tmp/ccKuINFn.o: In function `main':
+/home/runner/pps-test1-Bodduharshitha-4/p9original.c:8: war
+(gdb) b main
+Breakpoint 1 at 0x745: file p9original.c, line 5.
+(gdb) r
+Starting program: /home/runner/pps-test1-Bodduharshitha-4/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p9original.c:5
+5   {
+(gdb) n
+7       printf("Enter the first string\n");    
+(gdb) n
+Enter the first string
+8       gets(a);    
+(gdb) n
+3
+10      printf("Enter the second string\n");    
+(gdb) n
+Enter the second string
+11      gets(b);
+(gdb) n
+4
+13      if( strcmp(a,b) == 0 )
+(gdb) n
+16          printf("Entered strings are not equal.\n");
+(gdb) n
+Entered strings are not equal.
+17          return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 133) exited normally]
+(gdb) Quit
